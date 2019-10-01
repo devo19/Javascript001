@@ -20,3 +20,6 @@ arr.push("z");
 arr.push("s");
 arr.sort(); // sort an array
 console.log(arr);
+
+var arr1 = ["x", "y", "z"];
+console.log(arr.concat(arr1));
