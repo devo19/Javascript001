@@ -10,3 +10,13 @@ console.log(teams[0][0]); // first inner array - first element in that array - P
 console.log(teams);
 teams[0][1] = 51; // change second element in the first inner array
 console.log(teams);
+
+var arr = ["a", "b", "c"];
+console.log(arr.pop()); // removes the last element
+console.log(arr);
+
+arr.push("d"); // add an elememt to the array
+arr.push("z");
+arr.push("s");
+arr.sort(); // sort an array
+console.log(arr);
