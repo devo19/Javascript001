@@ -43,7 +43,7 @@ console.log(shallowcopy);
 //console.log(shallowcopy[0]);
 
 var deepCopy = JSON.parse(JSON.stringify(deepArray)); 
-// deep copy - when you have an array with an                                                              object inside it (array in array) always do deep copy, never shallowcopy to make sure everything is     copied properly
+// deep copy - when you have an array with an object inside it (array in array) always do deep copy never shallow copy to make sure everything is copied properly
 deepCopy[0].push("hi");
 console.log(deepArray[0] , deepCopy[0]);
 
