@@ -23,3 +23,27 @@ console.log(arr);
 
 var arr1 = ["x", "y", "z"];
 console.log(arr.concat(arr1));
+
+// below array copying
+
+var arr2 = ["one", "two", "three"];
+var arr3 = ["four", "five", "six"];
+
+var arr4 = arr2.slice(0);  // slice array copy
+console.log(arr4);
+
+var arr5 = [...arr3]; // spread opeartor
+console.log(arr5);
+
+var deepArray = [["hello"]];
+var shallowcopy = deepArray.slice(0);
+console.log(shallowcopy);
+
+//shallowcopy[0].push("hi");
+//console.log(shallowcopy[0]);
+
+var deepCopy = JSON.parse(JSON.stringify(deepArray)); 
+// deep copy - when you have an array with an                                                              object inside it (array in array) always do deep copy, never shallowcopy to make sure everything is     copied properly
+deepCopy[0].push("hi");
+console.log(deepArray[0] , deepCopy[0]);
+
